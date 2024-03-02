@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: #54eaf5;
+    --black: #13131a;
+    --bg: #0f0e0e;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: 0.5s;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background: var(--bg);
+    cursor: pointer;
+    position: relative;
+    left: 10vh;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+.header {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo p {
+    height: 6rem;
+    font-weight: 100;
+    font-family: 'Are You Serious', cursive;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: rgb(255, 255, 255);
+}
+
+.header .navbar a:hover {
+    color: rgb(0, 225, 255);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.header .icons div {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+#menu-btn {
+    display: none;
+}
+
+
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(background1.webp) no-repeat;
+    background-size: 88%;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 5rem;
+
+    color: rgb(0, 0, 0);
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.home .content p {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: rgb(0, 0, 0);
+}
+
+table,
+tr,
+th,
+td {
+    border-collapse: collapse;
+    border: 2px solid #000;
+    text-align: center;
+    font-size: 5vh;
+    padding: 2vh;
+    margin: 2vh 0;
+    height: 25pt;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(67, 216, 211);
+}
+
+.about .row {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url('background2.jpg') no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 4.0rem;
+    color: rgb(10, 0, 0);
+    font-family: 'Cookie', cursive;
+}
+
+.about .row .content p {
+    font-size: 1.7rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-weight: bolder;
+    text-align: left;
+
+}
+
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    background: url('https://c.wallhere.com/photos/5d/d1/threadless_cake_just_married_simple_humor_minimalism_blue_background_simple_background-1367027.jpg!d')no-repeat;
+    background-size: 100%;
+}
+
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: rgb(0, 0, 0);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .price span {
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
+}
+
+.menu .box-container .box:hover {
+    background: rgb(67, 148, 240);
+}
+
+.menu .box-container .box:hover>* {
+    color: #fff;
+}
+
+.form_control {
+    align-items: center;
+    padding-left: 25%;
+    padding-top: 5px;
+    width: 80%;
+}
+
+.div {
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-left: 45px;
+    width: 90%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid hsl(252, 55%, 69%);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: "Quicksand", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.btnn {
+    border: rgb(8, 8, 147);
+    color: #f3f3f3;
+    border-radius: 40px;
+    background-color: #077d7d;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: #508bd8;
+}
+
+.footer .links {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    background: var(--main-color);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+
+#Flavour{
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+}

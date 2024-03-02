@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bakrey</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Are+You+Serious&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <p> <img src='cake.png' style="width: 113px; height: 113;"></p>
+
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#menu">menu</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="content">
+
+            <h3 class="neonText" id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">Topped With a Smile!</h3>
+            <p class="neonText" id="demo" ondblclick="ondblclick1()">Sometimes you just need cake.</p>
+
+        </div>
+
+    </section>
+
+
+    <section class="about" id="about">
+
+        <h1 class="heading"> <span>about</span> us </h1>
+
+        <div class="row">
+
+            <div class="image">
+
+            </div>
+
+            <div class="content">
+                <h3>Because every cake has a story to tell.</h3>
+                <table border="1">
+                    <tr>
+                        <th>SI</th>
+                        <th>Cake-Flavour</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Chocolate-Cake</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Strawberry-Cake</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>IceCream-Cake</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Vanilla-Cake</td>
+                    </tr>
+                </table>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="menu" id="menu">
+
+        <h1 class="heading"> our <span>menu</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="chocolate-cake.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <h3>Chocolate-Cake</h3>
+                <div class="price">Rs 450<span>700</span></div>
+                <a href="#" class="btn" onclick="myFunction1()">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="white-chocolate-cake.jpeg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <h3>White-Chocolate-Ganache</h3>
+                <div class="price">Rs 500<span>650</span></div>
+                <a href="#" class="btn" onclick="myFunction1()">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="strabeery-delight-cake.jpeg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <h3>Strawberry delight</h3>
+                <div class="price">Rs 600<span>850</span></div>
+                <a href="#" class="btn" onclick="myFunction1()">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="Butterscotch-Candy.jpeg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <h3>Butterscotch-Candy</h3>
+                <div class="price">Rs 500<span>650</span></div>
+                <a href="#" class="btn" onclick="myFunction1()">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="ice-cream-cake.jpg" alt="" onmouseover="bigImg(this)" onmouseout="normalImg(this)">
+                <h3>ice-cream Cake</h3>
+                <div class="price">Rs 650<span>800</span></div>
+                <a href="#" class="btn" onclick="myFunction1()">add to cart</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span>contact</span> us </h1>
+        <body class="wallpaper">
+            <div class="div">
+              <div class="align">
+              </div>
+              <br>
+              <form action="main.php" method="post" enctype="multipart/form-data" class="form_control" onreset="onreset1()" onsubmit="onsubmit1()" >
+                
+              <label for="Name" id="Name">Enter Name :</label>
+                <input type="text" id="name" name="Name"  required onfocus="onfocus1(this)" onblur="onblur1(this)" />
+                <br />
+
+                <label for="Address"  > Enter Address : </label>
+                <input type="text" name="Address" id="Address" required onfocus="onfocus1(this)"  onblur="onblur1(this)" onselect="onselect1()"/>
+                <br />
+
+                <label for="ice">Choose Flavour :</label>
+                <select name="ice" id="ice" onfocus="onfocus1(this)" onblur="onblur1(this)" onchange="onchange1()" required >
+                  <option value="CHOCOLATE-CAKE">CHOCOLATE-CAKE</option>
+                  <option value="WHITE-CHOCOLATE-GANACHE">WHITE-CHOCOLATE-GANACHE</option>
+                  <option value="STRAWBERRY-CAKE">STRAWBERRY-CAKE</option>
+                  <option value="iCE-CREAM-CAKE">iCE-CREAM-CAKE</option>
+                  <option value="BUTTERSCOTCH-CANDY">BUTTERSCOTCH-CANDY</option>
+                </select>
+                <br>
+                <br>
+                <p id="Flavour"></p>
+                <br />
+                
+                <label for="Payment">Payment :</label>
+                <input type="radio" id="Payment" name="Payment" value="Cash"  onblur="onblur1(this)" />
+                <label for="Payment">Cash</label>
+                <input type="radio" id="Payment" name="Payment" value="Card"  onblur="onblur1(this)" />
+                <label for="female">Card</label>
+                <br>
+                <label for="email" id="email"> Enter Email: </label>
+                <input type="email" name="Email" id="email" required onfocus="onfocus1(this)" onblur="onblur1(this)"/>
+                <br />
+                <label for="mobile" > Enter Mobile : </label>
+                <input type="tel" name="Mobile" id="om" onfocus="onfocus1(this)"  onblur="onblur1(this)" />
+                <br>
+                <label for="check">Accept Terms and Conditions :</label>
+                <input type="checkbox" id="check">
+                <br/>
+                <br>
+                <input type="submit" class="btnn" name="submit">
+                <input type="reset" class="btnn" >
+                <br>
+                <br>
+              </form>
+       
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
